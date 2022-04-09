@@ -121,7 +121,7 @@
 													<img src="./img/product01.png" alt="">
 												</div>
 												<div class="product-body">
-													<h3 class="product-name"><a href="#">Funko Spiderman</a></h3>
+													<h3 class="product-name"><a href="product.html">Funko Spiderman</a></h3>
 													<h4 class="product-price"><span class="qty">1x</span>$500.00</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
@@ -132,7 +132,7 @@
 													<img src="./img/product02.png" alt="">
 												</div>
 												<div class="product-body">
-													<h3 class="product-name"><a href="#">Funko Helsinki</a></h3>
+													<h3 class="product-name"><a href="product.html">Funko Helsinki</a></h3>
 													<h4 class="product-price"><span class="qty">3x</span>$1500.00</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
@@ -201,10 +201,9 @@
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
-						<h3 class="breadcrumb-header">Iniciar Sesion</h3>
+						<h3 class="breadcrumb-header">Datos de la cuenta</h3>
 						<ul class="breadcrumb-tree">
-							<li><a href="#">Inicio</a></li>
-							<li class="active">Iniciar Sesion</li>
+							<li class="active">/ Configuracion de cuenta</li>
 						</ul>
 					</div>
 				</div>
@@ -220,9 +219,17 @@
 			<div class="sign-up" style="margin-left:30%; margin-right: 30%; border-style:groove; border-radius: 5px; border-width: 10px;" >
 				<form action="reset">
 					<label>Nombre de usuario:</label><input class="input" type="text" name="First-name" placeholder="Nombre de Usuario">
+					<b>Nombre:</b><input class="input" type="text" name="Last-name" placeholder="Nombre">
+					<b>Apellidos:</b><input class="input" type="text" name="apellidos" placeholder="Apellidos">
 					<b>Contraseña:</b><input class="input" type="password" name="password" placeholder="Contraseña">
-					<div style="text-align: center;"><a href="myprofilechanges.html">Iniciar sesion</a> </div><br>
-					<div style="text-align: center;"><a href="sign-up.html">Registrate</a> </div><br>
+					<b>Correo:</b><input class="input" type="email" name="email" placeholder="Email">
+					<b>Ciudad:</b><input class="input" type="text" name="city" placeholder="Ciudad">
+					<b>País:</b><input class="input" type="text" name="country" placeholder="País">
+					<b>Código Postal:</b><input class="input" type="text" name="zip-code" placeholder="Codigo Postal">
+					<b>Direccion  de envio:</b><input class="input" type="text" name="country" placeholder="Escribe una direccion de envio">
+					<b>Télefono:</b><input class="input" type="tel" name="tel" placeholder="Telefono"><br>
+
+					<br><div style="text-align: center;"><input class="btn btn-primary" type="button" name="btn_Sign-Up" value="Guardar cambios"></div><br>
 				</form>
 			</div>
 			<!-- /container -->
