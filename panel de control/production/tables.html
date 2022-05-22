@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>FunkoStore | </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>FunkoStore</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -66,25 +66,23 @@
                      
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-desktop"></i> Elementos IU <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-desktop"></i> Facturación <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       
                       <li><a href="invoice.html">Factura</a></li>
-                      <li><a href="inbox.html">Inbox</a></li>
-                      <li><a href="calendar.html">Calendario</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-table"></i> Tablas <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-table"></i> Registros <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="tables.html">Tablas</a></li>
-                      <li><a href="tables_dynamic.html">Tablas Dinámicas</a></li>
+                      <li><a href="tables.html">Registros</a></li>
+                      
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-bar-chart-o"></i> Presentación de Datos <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Análisis <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                      
-                      <li><a href="echarts.html">Gráficos Simples</a></li>
-                      <li><a href="other_charts.html">Otros Gráficos</a></li>
+                      <li><a href="echarts.html">Gráficos </a></li>
+                      
                     </ul>
                   </li>
                   
@@ -223,7 +221,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Tablas <small></small></h3>
+                <h3>Registros <small></small></h3>
               </div>
 
               <div class="title_right">
@@ -244,7 +242,7 @@
               <div class="col-md-6 col-sm-6  ">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Tabla de usuarios <small>Usuarios registrados</small></h2>
+                    <h2>Usuarios <small>Información</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -301,7 +299,7 @@
               <div class="col-md-6 col-sm-6  ">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Otra tabla <small></small></h2>
+                    <h2>Funkos <small>Inventario</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -322,30 +320,31 @@
                     <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th>#</th>
-                          <th>Nombre(s)</th>
-                          <th>Apellidos</th>
-                          <th>Nombre de usuario</th>
+                          <th>#FunkoPop ID</th>
+                          <th>Name FunkoPop</th>
+                          <th>Price</th>
+                          <th>Description</th>
+                          <th>Stock</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
+                          <th scope="row">363</th>
+                          <td>Venom</td>
+                          <td>399</td>
+                          <td>Figura con cabeza oscilante</td>
                         </tr>
                         <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
+                          <th scope="row">1043</th>
+                          <td>Lilo</td>
+                          <td>399</td>
+                          <td>Figura de vinil</td>
                         </tr>
                         <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
+                          <th scope="row">323</th>
+                          <td>Mulan</td>
+                          <td>399</td>
+                          <td>Figura de vinil</td>
                         </tr>
                       </tbody>
                     </table>
@@ -358,192 +357,6 @@
 
               <div class="clearfix"></div>
 
-              <div class="col-md-12 col-sm-12  ">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Diseñar tabla <small>Diseño personalzado</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Configuración 1</a>
-                            <a class="dropdown-item" href="#">Configuración 2</a>
-                          </div>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-
-                  <div class="x_content">
-
-                    <div class="table-responsive">
-                      <table class="table table-striped jambo_table bulk_action">
-                        <thead>
-                          <tr class="headings">
-                            <th>
-                              <input type="checkbox" id="check-all" class="flat">
-                            </th>
-                            <th class="column-title">Factura </th>
-                            <th class="column-title">Día de facturación </th>
-                            <th class="column-title">Orden </th>
-                            <th class="column-title">Factura a nombre </th>
-                            <th class="column-title">Estado actual </th>
-                            <th class="column-title">Monto </th>
-                            <th class="column-title no-link last"><span class="nobr">Acción</span>
-                            </th>
-                            <th class="bulk-actions" colspan="7">
-                              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
-                            </th>
-                          </tr>
-                        </thead>
-
-                        <tbody>
-                          <tr class="even pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000040</td>
-                            <td class=" ">May 23, 2014 11:47:56 PM </td>
-                            <td class=" ">121000210 <i class="success fa fa-long-arrow-up"></i></td>
-                            <td class=" ">John Blank L</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$7.45</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="odd pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000039</td>
-                            <td class=" ">May 23, 2014 11:30:12 PM</td>
-                            <td class=" ">121000208 <i class="success fa fa-long-arrow-up"></i>
-                            </td>
-                            <td class=" ">John Blank L</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$741.20</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="even pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000038</td>
-                            <td class=" ">May 24, 2014 10:55:33 PM</td>
-                            <td class=" ">121000203 <i class="success fa fa-long-arrow-up"></i>
-                            </td>
-                            <td class=" ">Mike Smith</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$432.26</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="odd pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000037</td>
-                            <td class=" ">May 24, 2014 10:52:44 PM</td>
-                            <td class=" ">121000204</td>
-                            <td class=" ">Mike Smith</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$333.21</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="even pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000040</td>
-                            <td class=" ">May 24, 2014 11:47:56 PM </td>
-                            <td class=" ">121000210</td>
-                            <td class=" ">John Blank L</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$7.45</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="odd pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000039</td>
-                            <td class=" ">May 26, 2014 11:30:12 PM</td>
-                            <td class=" ">121000208 <i class="error fa fa-long-arrow-down"></i>
-                            </td>
-                            <td class=" ">John Blank L</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$741.20</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="even pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000038</td>
-                            <td class=" ">May 26, 2014 10:55:33 PM</td>
-                            <td class=" ">121000203</td>
-                            <td class=" ">Mike Smith</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$432.26</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="odd pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000037</td>
-                            <td class=" ">May 26, 2014 10:52:44 PM</td>
-                            <td class=" ">121000204</td>
-                            <td class=" ">Mike Smith</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$333.21</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-
-                          <tr class="even pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000040</td>
-                            <td class=" ">May 27, 2014 11:47:56 PM </td>
-                            <td class=" ">121000210</td>
-                            <td class=" ">John Blank L</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$7.45</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                          <tr class="odd pointer">
-                            <td class="a-center ">
-                              <input type="checkbox" class="flat" name="table_records">
-                            </td>
-                            <td class=" ">121000039</td>
-                            <td class=" ">May 28, 2014 11:30:12 PM</td>
-                            <td class=" ">121000208</td>
-                            <td class=" ">John Blank L</td>
-                            <td class=" ">Pagado</td>
-                            <td class="a-right a-right ">$741.20</td>
-                            <td class=" last"><a href="#">Ver</a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-							
-						
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
