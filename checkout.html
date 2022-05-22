@@ -177,13 +177,13 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Inicio</a></li>
-						<li><a href="#">Promociones</a></li>
-						<li><a href="#">Tienda</a></li>
-						<li><a href="#">Anime</a></li>
-						<li><a href="#">Comics</a></li>
-						<li><a href="#">Video juegos</a></li>
-						<li><a href="#">Peliculas</a></li>
+						<li class="active"><a href="index.html">Inicio</a></li>
+						<li><a href="store.html">Promociones</a></li>
+						<li><a href="store.html">Tienda</a></li>
+						<li><a href="store.html">Anime</a></li>
+						<li><a href="store.html">Comics</a></li>
+						<li><a href="store.html">Video juegos</a></li>
+						<li><a href="store.html ">Peliculas</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -300,7 +300,49 @@
 					<!-- /Order Details --><!-- Shiping Details -->
 						<div class="shiping-details">
 							<div class="section-title">
-								<h3 class="title">Dirección de envío</h3>
+								
+								<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+   
+    <script src="https://www.paypal.com/sdk/js?client-id=Afx3si29JWWQbhYOYJB2JmxzjzN9p20KYr_Yqxdhu72ioUzJXMjwyhrcEYAGzxzLuFM_UQeAeWFCArOy&currency=MXN"></script>
+    
+    <div id="paypal-button-container"></div>
+    <script>
+      paypal.Buttons({
+          
+        
+        createOrder: (data, actions) => {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '100.00' 
+              }
+              
+              
+            }]
+          });
+        },
+        
+       
+        
+        
+        onApprove: (data, actions) => {
+          return actions.order.capture().then(function(orderData) {
+            // Successful capture! For dev/demo purposes:
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+            const transaction = orderData.purchase_units[0].payments.captures[0];
+            alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+            // When ready to go live, remove the alert and show a success message within this page. For example:
+            // const element = document.getElementById('paypal-button-container');
+            // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+            // Or go to another URL:  actions.redirect('thank_you.html');
+          });
+        }
+      }).render('#paypal-button-container');
+    </script>
+  </body>
 							</div>
 							<div class="input-checkbox">
 								<input type="checkbox" id="shiping-address">
