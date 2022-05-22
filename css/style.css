@@ -2188,3 +2188,17 @@ textarea.input {
     margin-top: 10px;
   }
 }
+
+#Col-DatosFijos, #tDatosFijos, #tActDatos {
+width: 75%;
+border-color: #1E1F29;
+border: 10px;
+}
+
+#Col-ActDatos {
+  width: 25%
+}
+
+.col-md-7-PU {
+  width: 100%;
+}

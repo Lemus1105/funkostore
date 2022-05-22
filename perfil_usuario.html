@@ -220,46 +220,77 @@
 	<div class="section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
-					<!-- Datos personales dijos -->
-					<div>
-						
-					</div>
-					<!-- /Datos personales fijos -->
-					<!-- Actualizar datos personales -->
-					<div class="billing-details">
-						<div class="form-group">
-							<img src="img/perfil1.png" alt="" width="150px" height="150px" />
-						</div>
-						<div class="form-group">
-							<input class="input" type="text" name="first-name" placeholder="Nombre(s)">
-						</div>
-						<div class="form-group">
-							<input class="input" type="text" name="last-name" placeholder="Apellidos">
-						</div>
-						<div class="form-group">
-							<input class="input" type="email" name="email" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<input class="input" type="text" name="address" placeholder="Dirección de envio">
-						</div>
-						<div class="form-group">
-							<input class="input" type="text" name="zip-code" placeholder="Código Postal">
-						</div>
-						<div class="form-group">
-							<input class="input" type="tel" name="tel" placeholder="Teléfono">
-						</div>
-						<div class="form-group">
-							<input class="input" type="text" name="contraseña" placeholder="Contraseña">
-						</div>
-						<div class="form-group">
-							<input class="input" type="text" name="nueva contraseña" placeholder="Nueva contraseña">
-						</div>
-						<div>
-							<a href="#" class="primary-btn order-submit">Actualizar datos</a>
-						</div>
-					</div>
-					<!-- /Actualizar datos personales -->
+				<div class="col-md-7-PU">
+					<table>
+						<tr>
+							<td id="Col-DatosFijos">
+								<!-- Datos personales dijos -->
+								<div class="static-details">
+									<table id="tDatosFijos">
+										<tr>
+											<h4>Datos de Usuario</h4>
+											<form action="" method="get">
+												<p><img src="img/perfil1.png" alt="" width="150px" height="150px" /></p>
+												<p>Nombre(s): <input type="text" value="María Lucía"></p>
+												<p>Primer Apellido: <input type="text" value="Gonzpalez"></p>
+												<p>Segundo Apellido: <input type="text" value="Perezchica"></p>
+												<p>Email: <input type="email" value="ejemplo@example.com"></p>
+											</form>
+										</tr>
+										<tr>
+											<br>
+											<h4>Domicilio</h4>
+											<form action="">
+												<p>Calle: <input type="text" value="Francisco de Palma"></p>
+												<p>Número: <input type="number" value="550" min="1" max="100000"></p>
+												<p>Código Postal: <input type="number" value="1234" min="1"
+														max="100000"></p>
+												<p>Ciudad: <input type="text" value="Azcapotzalco"></p>
+											</form>
+										</tr>
+									</table>
+								</div>
+								<!-- /Datos personales fijos -->
+							</td>
+							<td id="Col-ActDatos">
+								<!-- Actualizar datos personales -->
+								<div class="billing-details">
+									<table id="tActDatos">
+										<tr>
+											<h4>Actualizar datos de Usuario</h4>
+											<form action="">
+												<p><img src="img/perfil1.png" alt="" width="150px" height="150px"
+														onclick="" /></p>
+												<p><input class="input" type="text" name="first-name"
+														placeholder="Nuevo(s) Nombre(s)"></p>
+												<p><input class="input" type="text" name="last-name"
+														placeholder="Nuevo Primer Apellido"></p>
+												<p><input class="input" type="text" name="last-name"
+														placeholder="Nuevo Segundo Apellido"></p>
+												<p><input class="input" type="email" name="email"
+														placeholder="Nuevo Email"></p>
+												<p><input class="input" type="text" name="address"
+														placeholder="Nueva Calle"></p>
+												<p><input class="input" type="number" name="zip-code" min="1" max="100000"
+														placeholder="Nuevo Código Postal"></p>
+												<p><input class="input" type="tel" name="tel"
+														placeholder="Nuevo Teléfono"></p>
+												<p><input class="input" type="password" name="Nueva contraseña"
+														placeholder="Nueva contraseña"></p>
+												<p><input class="input" type="password" name="nueva contraseña"
+														placeholder="Confirma nueva contraseña"></p>
+											</form>
+										</tr>
+									</table>
+									<div>
+										<a href="#" class="primary-btn order-submit">Actualizar datos</a>
+									</div>
+								</div>
+								<!-- /Actualizar datos personales -->
+							</td>
+						</tr>
+
+					</table>
 				</div>
 			</div>
 		</div>
